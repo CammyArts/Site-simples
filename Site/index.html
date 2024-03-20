@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site simples</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(250, 199, 230);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        input{
+            border: solid 2px rgb(242, 200, 255);
+            padding: 4px;
+        }
+        #botao{
+            border-radius: 7px;
+            background-color: rgb(192, 124, 255);
+        }
+        .container{
+        
+        width: 20vw;
+        height: 50vh;
+        background: #fcd4ff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+        .container2{
+            padding: 50px;
+            background: #fcd4ff;
+            margin-top: 10%;
+        }
+        #cad{
+            color: rgb(91, 7, 170);
+        }
+        #pro{
+            color: rgb(255, 113, 47);
+        }
+        input{
+            margin: 2px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container2">
+    <div class="container">
+        <form action="index.php" method="post">
+                <h1 id="cad">Cadastro</h1><h1 id="pro">Proz</h1>
+                Nome: <input type="text" name="tx_nome" placeholder="Ex: Maria" required><br>
+                Sobrenome: <input type="text" name="tx_sobrenome" placeholder="Ex: da Cunha" required><br>
+                Telefone: <input type="text" name="tx_telefone" placeholder="(DDD) 0000-0000" required><br>
+                Nickname: <input type="text" name="tx_nickname" placeholder="Ex: Abobrinha" required><br>
+                Email: <input type="email" name="em_usuario" placeholder="exemplo@gmail.com"required ><br>
+                Senha: <input type="password" name="pw_usuario" placeholder="minimo 8 caracteres" minlength="8" required><br>
+                <center><input id="botao" type="submit" value="Entrar"></center>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
